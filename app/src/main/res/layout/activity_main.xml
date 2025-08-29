@@ -108,15 +108,6 @@
         tools:layout_editor_absoluteY="150dp" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/sbPeso"
-        tools:layout_editor_absoluteX="176dp" />
-
-    <TextView
         android:id="@+id/tvAltura"
         android:layout_width="73dp"
         android:layout_height="25dp"
@@ -127,5 +118,18 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/sbAltura"
+        tools:layout_editor_absoluteX="169dp" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="0,00"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/sbPeso"
         tools:layout_editor_absoluteX="169dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
