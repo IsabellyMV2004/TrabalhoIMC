@@ -7,13 +7,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Calcular IMC"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <SeekBar
+        android:id="@+id/sbAltura"
+        android:layout_width="381dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="288dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Altura"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sbAltura"
+        tools:layout_editor_absoluteX="151dp" />
+
+    <SeekBar
+        android:id="@+id/sbPeso"
+        android:layout_width="381dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiNome"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:hint="Seu nome completo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <RadioButton
+        android:id="@+id/rbSexoF"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:text="Feminino"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <RadioButton
+        android:id="@+id/rbSexoM"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:text="Masculino"
+        app:layout_constraintEnd_toStartOf="@+id/rbSexoF"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="127dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="4dp"
+        android:text="Peso"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sbPeso"
+        tools:layout_editor_absoluteX="142dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/tiNome"
+        tools:layout_editor_absoluteX="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
